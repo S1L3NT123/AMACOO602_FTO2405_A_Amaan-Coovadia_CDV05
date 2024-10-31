@@ -1,4 +1,3 @@
-/* Reset */
 * {
   margin: 0;
   padding: 0;
@@ -8,21 +7,30 @@
 body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
-  color: #e0e0e0; /* Light text for dark mode */
-  background-color: #121212; /* Dark background */
+  color: #e0e0e0; 
+  background-color: #272727; 
   max-width: 800px;
   margin: 0 auto;
-  padding: 20px;
+  padding: 0 20px 20px;
 }
 
-/* Header */
 header {
   text-align: center;
-  padding: 20px 0;
-  color: #ffffff;
+  padding: 80px 0 20px;
+  color: #bb86fc;
 }
 
-/* Navigation */
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #1f1f1f;
+  padding: 15px 0;
+  z-index: 1000; 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); 
+}
+
 nav ul {
   list-style: none;
   display: flex;
@@ -36,25 +44,23 @@ nav a {
 }
 
 nav a:hover {
-  color: #bb86fc; /* Soft purple accent */
+  color: #bb86fc; 
 }
 
-/* Sections */
 section {
   margin-top: 40px;
-  background-color: #1f1f1f; /* Dark background for sections */
+  background-color: #1f1f1f; 
   padding: 20px;
   border-radius: 8px;
 }
 
 h2 {
-  color: #bb86fc; /* Soft purple accent */
+  color: #bb86fc; 
   border-bottom: 2px solid #bb86fc;
   padding-bottom: 10px;
   margin-bottom: 20px;
 }
 
-/* Project */
 .project {
   display: flex;
   gap: 20px;
@@ -66,19 +72,23 @@ h2 {
   height: 100px;
   object-fit: cover;
   border-radius: 4px;
-  border: 2px solid #333; /* Slight border for image contrast */
+  border: 2px solid #333; 
 }
 
 .project a {
-  color: #03dac5; /* Soft teal for links */
+  padding-left:10px ;
+  color: #03dac5; 
   text-decoration: none;
+  background-color: #1f1f1f;
+
 }
 
 .project a:hover {
   text-decoration: underline;
+  background-color: #363636;
 }
 
-/* Skills Section */
+
 ul {
   color: #e0e0e0;
   list-style-type: none;
@@ -90,9 +100,10 @@ ul li::before {
   color: #bb86fc;
 }
 
-/* Footer */
+
 footer {
   text-align: center;
   margin-top: 40px;
-  color: #888;
+  color: #5d5d5d;
+
 }
